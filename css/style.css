@@ -1,9 +1,42 @@
-main {
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	color: #999;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1140px;
+    text-align: center;
+}
+
+ul {
+	list-style: none;
+}
+
+#content {
     background-color: #595959;
     color: #fff;
     font: 1.5em sans-serif;
+    padding: 1.5em;
 }
 
-.content {
-    padding: 1.5em;
+#content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.showcase {
+    width: 100%;
+    position: relative;
 }
