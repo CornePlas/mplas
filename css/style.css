@@ -1,7 +1,7 @@
 * {
 	box-sizing: border-box;
 	margin: 0;
-	padding: 0;
+    padding: 0;
 }
 
 img {
@@ -17,6 +17,7 @@ body {
 .wrapper {
     width: 100%;
     max-width: 1140px;
+    min-width: 425px;
     margin: auto;
     text-align: center;
 }
@@ -29,16 +30,27 @@ ul {
     background-color: #595959;
     color: #fff;
     font: 1.5em sans-serif;
-    padding: 1.5em;
+    padding: 10px 20px;
 }
 
 #content a {
     color: #fff;
     text-decoration: none;
-    font-size: 1em;
 }
 
 .showcase {
     width: 100%;
     position: relative;
+}
+
+@media(max-width: 425px) {
+    .wrapper {
+        min-width: 100%;
+    }
+    #content {
+        padding: 5px;
+    }
+    #content a {
+        font-size: 0.8em;
+    }
 }
